@@ -1,0 +1,16 @@
+.Navbar {
+  &_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+  }
+  &_menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-top: 15rem;
+    position: relative;
+  }
+}

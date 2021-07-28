@@ -1,0 +1,40 @@
+.Dropdown {
+  position: absolute;
+  top: 5rem;
+  background-color: rgba(black, 0.5);
+  width: 128rem;
+  height: 30rem;
+  padding: 5rem;
+  padding-bottom: 3rem;
+
+  &_title {
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+
+    & > svg {
+      vertical-align: middle;
+      font-size: 1.3rem;
+    }
+  }
+
+  &_menu {
+    width: 25rem;
+    position: relative;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+  }
+  &_subtitle {
+    display: flex;
+    align-items: center;
+    margin: 1rem 0;
+    cursor: pointer;
+
+    & > svg {
+      vertical-align: middle;
+      font-size: 1.3rem;
+    }
+  }
+}
