@@ -3,19 +3,30 @@ import { FaAngleRight } from "react-icons/fa";
 import Brandmenu from "./Brandmenu";
 import "./brandmenu.scss";
 
-const Sidemenu = ({ item }) => {
+const Sidemenu = ({ item, index }) => {
   const [sidemenu, setSidemenu] = useState(false);
+  const [brandMenu, setBrandMenu] = useState(false);
 
-  const openSidemenu = () => setSidemenu(true);
-  const closeSidemenu = () => setSidemenu(false);
+  const openSidemenu = () => {
+    setSidemenu(true);
+    setBrandMenu(true);
+  };
+  const closeSidemenu = () => {
+    setBrandMenu(false);
+  };
 
-  console.log(item);
   return (
-    <div className="Sidemenu">
-      <p className="Sidemenu_title" onMouseEnter={openSidemenu}>
+    <div className="Sidemenu" onMouseEnter={openSidemenu}>
+      <p className="Sidemenu_title">
         {item.title} <FaAngleRight />
       </p>
-      {sidemenu && <Brandmenu item={item} closeSidemenu={closeSidemenu} />}
+      {sidemenu && brandMenu && (
+        <Brandmenu
+          item={item}
+          sidemenu={sidemenu}
+          closeSidemenu={closeSidemenu}
+        />
+      )}
     </div>
   );
 };

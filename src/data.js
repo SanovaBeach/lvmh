@@ -23,6 +23,42 @@ export const data = [
           {
             title: "Name6",
           },
+          {
+            title: "1Name1",
+          },
+          {
+            title: "1Name2",
+          },
+          {
+            title: "1Name3",
+          },
+          {
+            title: "1Name4",
+          },
+          {
+            title: "Name5",
+          },
+          {
+            title: "Name6",
+          },
+          {
+            title: "Name1",
+          },
+          {
+            title: "Name2",
+          },
+          {
+            title: "Name3",
+          },
+          {
+            title: "Name4",
+          },
+          {
+            title: "Name5",
+          },
+          {
+            title: "Name6",
+          },
         ],
       },
       {
@@ -118,7 +154,7 @@ export const data = [
         ],
       },
       {
-        title: "Houses6",
+        title: "Other activities",
         brandMenu: [
           {
             title: "6Name1",

@@ -12,14 +12,7 @@ const Dropdown = ({ item, mouseLeaveEvent }) => {
         </h3>
         <ul className="Dropdown_menu">
           {item.subMenu.map((item, index) => {
-            return (
-              <Sidemenu
-                // openSideMenu={openSidemenu}
-                // closeSidemenu={closeSidemenu}
-                item={item}
-                key={index}
-              />
-            );
+            return <Sidemenu item={item} key={index} index={index} />;
           })}
         </ul>
       </div>
@@ -28,20 +21,3 @@ const Dropdown = ({ item, mouseLeaveEvent }) => {
 };
 
 export default Dropdown;
-
-{
-  /* {item.subMenu.map((item, index) => {
-  const { title, brandMenu } = item;
-  console.log("brand menu", brandMenu);
-  return (
-    <li
-      className="Dropdown_subtitle"
-      key={index}
-      onMouseEnter={openSidemenu}
-    >
-      {title} <FaAngleRight />
-      {sidemenu && <Sidemenu />}
-    </li>
-  );
-})} */
-}

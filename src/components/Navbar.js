@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import "./navbar.scss";
 import { data } from "../data";
 import Submenu from "./Submenu";

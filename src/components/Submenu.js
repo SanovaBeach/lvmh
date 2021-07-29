@@ -15,13 +15,6 @@ const Submenu = ({ item }) => {
     setBorderActive(false);
   };
 
-  const leave = () => {
-    if (!dropDown && borderActive) {
-      setDropDown(false);
-      setBorderActive(false);
-    }
-  };
-
   return (
     <>
       <div className="Submenu">

@@ -1,20 +1,19 @@
 import React from "react";
 
-const Brandmenu = ({ item, closeSideMenu }) => {
-  console.log("brandmenu", item);
-
-  const house = item.brandMenu.map((item) => item.title);
-  console.log("houses", house);
-
+const Brandmenu = ({ item, sidemenu, closeSidemenu }) => {
   return (
     <div className="Brandmenu">
-      {item.brandMenu.map((item, index) => {
-        return (
-          <p className="Brandmenu_title" key={index}>
-            {item.title}
-          </p>
-        );
-      })}
+      {sidemenu && (
+        <div className="Brandmenu_container">
+          {item.brandMenu.map((item, index) => {
+            return (
+              <p className="Brandmenu_title" key={index}>
+                {item.title}
+              </p>
+            );
+          })}
+        </div>
+      )}
     </div>
   );
 };
