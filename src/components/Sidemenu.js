@@ -11,8 +11,17 @@ const Sidemenu = ({ item, index }) => {
     setSidemenu(true);
     setBrandMenu(true);
   };
+  const closeAll = () => {
+    if (brandMenu && sidemenu) {
+      setSidemenu(true);
+      setBrandMenu(true);
+    } else {
+      setSidemenu(false);
+      setBrandMenu(false);
+    }
+  };
   const closeSidemenu = () => {
-    setBrandMenu(false);
+    setSidemenu(false);
   };
 
   return (
